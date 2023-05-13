@@ -7,14 +7,29 @@ let arr = [
 ];
 
 function PrintStudentswithMap() {
+  let freq = {};
+  for(let i=0; i < arr.length; i++){
+    if(freq[arr[i]] === undefined){
+      freq[arr[i]] = 1;
+    }else{
+      freq[arr[i]] = freq[arr[i]] + 1;
+    }
+  }
+  console.log(freq)
   //Write your code here , just console.log
 }
 
-function PrintStudentsbyForEach() {
+let txt = "";
+function PrintStudentsbyForEach(value) {
+  console.log(arr.forEach(PrintStudentsbyForEach));
+
+ txt += value + "<br>";
   //Write your code here , just console.log
 }
 
 function addData() {
+  arr.push('id',4 ,'name','dabloo', 'age', 23, 'mark',100)
+  console.log(arr)
   //Write your code here, just console.log
 }
 
